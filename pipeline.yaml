@@ -104,7 +104,8 @@ Resources:
       RegisterWithThirdParty: 'true'
       Filters:
       - JsonPath: "$.ref"
-        MatchEquals: refs/heads/{Branch}
+        #MatchEquals: refs/heads/{Branch}
+        MatchEquals: refs/tags/*
       TargetPipeline: !Ref CodePipeline
       TargetAction: Source
       TargetPipelineVersion: !GetAtt CodePipeline.Version

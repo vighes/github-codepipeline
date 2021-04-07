@@ -5,6 +5,7 @@ Description: github-codepipeline
 Parameters:
   # *** This value must always be passed in when creating / updating stack
   # "NoEcho" is set to true, for security, so token won't be visible when examining the resulting stack
+
   GitHubOAuthToken:
     Type: String
     NoEcho: true
@@ -19,7 +20,7 @@ Parameters:
   # *** The owner of the Github repo for this application.
   GitHubOwner:
     Type: String
-    Default: symphoniacloud
+    Default: vighes
     AllowedPattern: "[A-Za-z0-9-]+"
 
   GitHubRepo:

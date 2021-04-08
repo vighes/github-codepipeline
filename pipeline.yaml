@@ -105,7 +105,7 @@ Resources:
       Filters:
       - JsonPath: "$.ref"
         #MatchEquals: refs/heads/{Branch}
-        MatchEquals: refs/tags/v1.0
+        MatchEquals: refs/tags/.*
       TargetPipeline: !Ref CodePipeline
       TargetAction: Source
       TargetPipelineVersion: !GetAtt CodePipeline.Version
